@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Exclusão | Formulário</title>
 </head>
+
 <body>
-    
+    <h1>Excluir dados | Software Devs</h1>
+    <nav>
+        <ul>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+            <li><a href="leitura.html">Ver cadastro</a></li>
+            <li><a href="atualizacao.html">Atulaizar cadastro</a></li>
+        </ul>
+    </nav>
+    <h2>Escolha o que excluir:</h2>
+    <div class="formulario">
+        <form action="" method="dialog">
+            <label for="nome">Nome: </label>
+            <input disabled type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <input type="submit" value="Exluir">
+            <br>
+            <label for="homem">Homem: </label>
+            <input type="radio" id="homem" name="sexo" value="homem" checked>
+            <label for="mulher">Mulher: </label>
+            <input type="radio" id="mulher" name="sexo" value="mulher">
+            <label for="outro">Outro: </label>
+            <input type="radio" id="outro" name="sexo" value="outro">
+            <br>
+            <label for="cpf">CPF: </label>
+            <input disabled type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+            <input type="submit" value="Exluir">
+            <br>
+            <label for="endereco">Endereço: </label>
+            <input disabled type="text" id="endereco" name="endereco" placeholder="rua, nº, bairro">
+            <input type="submit" value="Exluir">
+            <br>
+            <label for="email">E-mail: </label>
+            <input disabled type="email" id="email" name="email" placeholder="exemplo@empresa.com.br">
+            <input type="submit" value="Exluir">
+
+        </form>
+    </div>
+
 </body>
+
 </html>

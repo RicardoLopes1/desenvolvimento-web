@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Cadastro | Formulário</title>
 </head>
 
-<body style="font-size: 20px;">
+<body>
     <h1>Cadastro de funcionários | Software Devs</h1>
     <nav>
-        <ul style="list-style-type: none;">
+        <ul>
             <li><a href="leitura.html">Ver cadastro</a></li>
             <li><a href="atualizacao.html">Atulaizar cadastro</a></li>
             <li><a href="exclusao.html">Exluir cadastro</a></li>
@@ -19,10 +20,11 @@
     </nav>
     <h2>Cadastre aqui:</h2>
     <div class="formulario">
-        <form action="" method="GET">
+        <form action="" method="POST">
             <label for="nome">Nome: </label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <input required type="text" id="nome" name="nome" placeholder="Digite seu nome">
             <br>
+            <label >Sexo: </label>
             <label for="homem">Homem: </label>
             <input type="radio" id="homem" name="sexo" value="homem" checked>
             <label for="mulher">Mulher: </label>
@@ -31,17 +33,18 @@
             <input type="radio" id="outro" name="sexo" value="outro">
             <br>
             <label for="cpf">CPF: </label>
-            <input type="enum" id="cpf" name="cpf" placeholder="Digite seu CPF">
+            <input required type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
             <br>
             <label for="endereco">Endereço: </label>
             <input type="text" id="endereco" name="endereco" placeholder="rua, nº, bairro">
             <br>
             <label for="email">E-mail: </label>
-            <input type="email" id="email" name="email" placeholder="exemplo@empresa.com.br">
-            <br>
+            <input required type="email" id="email" name="email" placeholder="exemplo@empresa.com.br">
+            <hr>
             <input type="submit" value="Enviar">
         </form>
     </div>
+    
 </body>
 
 </html>
