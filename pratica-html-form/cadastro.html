@@ -14,17 +14,19 @@
     <nav>
         <ul>
             <li><a href="leitura.html">Ver cadastro</a></li>
-            <li><a href="atualizacao.html">Atulaizar cadastro</a></li>
-            <li><a href="exclusao.html">Exluir cadastro</a></li>
+            <li><a href="atualizacao.html">Atualizar cadastro</a></li>
+            <li><a href="exclusao.html">Excluir cadastro</a></li>
         </ul>
     </nav>
     <h2>Cadastre aqui:</h2>
     <div class="formulario">
         <form action="" method="POST">
+
             <label for="nome">Nome: </label>
             <input required type="text" id="nome" name="nome" placeholder="Digite seu nome">
             <br>
-            <label >Sexo: </label>
+
+            <label>Sexo:</label>
             <label for="homem">Homem: </label>
             <input type="radio" id="homem" name="sexo" value="homem" checked>
             <label for="mulher">Mulher: </label>
@@ -32,19 +34,23 @@
             <label for="outro">Outro: </label>
             <input type="radio" id="outro" name="sexo" value="outro">
             <br>
+
             <label for="cpf">CPF: </label>
-            <input required type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+            <input required type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" minlength="11" maxlength="11">
             <br>
+
             <label for="endereco">Endereço: </label>
             <input type="text" id="endereco" name="endereco" placeholder="rua, nº, bairro">
             <br>
+
             <label for="email">E-mail: </label>
             <input required type="email" id="email" name="email" placeholder="exemplo@empresa.com.br">
             <hr>
+
             <input type="submit" value="Enviar">
         </form>
     </div>
-    
+
 </body>
 
 </html>
