@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,44 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>leitura | Formulário</title>
 </head>
+
 <body>
     <h1>Dados dos funcionários | Software Devs</h1>
     <nav>
         <ul>
             <li><a href="cadastro.html">Cadastrar</a></li>
-            <li><a href="atualizacao.html">Atulaizar cadastro</a></li>
-            <li><a href="exclusao.html">Exluir cadastro</a></li>
+            <li><a href="atualizacao.html">Atualizar cadastro</a></li>
+            <li><a href="exclusao.html">Excluir cadastro</a></li>
         </ul>
     </nav>
     <h2>Funcionários:</h2>
+
+    <div class="formulario">
+        <form action="" method="POST">
+            <label for="nome">Nome: </label>
+            <input required type="text" id="nome" name="nome" value="Jonas Máximo" disabled>
+            <br>
+
+            <label>Sexo: </label>
+            <label for="homem">Homem: </label>
+            <input type="radio" id="outro" name="sexo" value="outro" checked>
+            <br>
+
+            <label for="cpf">CPF: </label>
+            <input required type="text" id="cpf" name="cpf" value="00000000000" disabled>
+            <br>
+
+            <label for="endereco">Endereço: </label>
+            <input type="text" id="endereco" name="endereco" placeholder="rua, nº, bairro" value="Rua da paz, 563, Cruzeiro" disabled>
+            <br>
+
+            <label for="email">E-mail: </label>
+            <input required type="email" id="email" name="email" value="jonas@gmail.com" disabled>
+            <hr>
+        </form>
+    </div>
+
+
 </body>
+
 </html>

@@ -20,10 +20,12 @@
     </nav>
     <h2>Atualize os seus dados:</h2>
     <div class="formulario">
-        <form action="" method="GET">
+        <form action="" method="POST">
             <label for="nome">Nome: </label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <input required type="text" id="nome" name="nome" value="Jonas Máximo">
             <br>
+
+            <label>Sexo:</label>
             <label for="homem">Homem: </label>
             <input type="radio" id="homem" name="sexo" value="homem" checked>
             <label for="mulher">Mulher: </label>
@@ -31,17 +33,20 @@
             <label for="outro">Outro: </label>
             <input type="radio" id="outro" name="sexo" value="outro">
             <br>
+
             <label for="cpf">CPF: </label>
-            <input disabled type="enum" id="cpf" name="cpf" placeholder="Digite seu CPF">
+            <input required type="text" id="cpf" name="cpf" value="00000000000" disabled>
             <br>
+
             <label for="endereco">Endereço: </label>
-            <input type="text" id="endereco" name="endereco" placeholder="rua, nº, bairro">
+            <input type="text" id="endereco" name="endereco" placeholder="rua, nº, bairro" value="Rua da paz, 563, Cruzeiro">
             <br>
+
             <label for="email">E-mail: </label>
-            <input type="email" id="email" name="email" placeholder="exemplo@empresa.com.br">
-            <br>
-            <input type="submit" value="Atualizar">
-            
+            <input required type="email" id="email" name="email" value="jonas@gmail.com">
+            <hr>
+
+            <input type="submit" value="Enviar">
         </form>
     </div>
 </body>
